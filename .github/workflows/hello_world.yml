@@ -5,13 +5,36 @@ name: Hello
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
-  push:
-    branches: [ "main", "dev" ]
-  pull_request:
-    branches: [ "main" ]
-
+  # push:
+    # branches: [ "main", "dev" ]
+  # pull_request:
+    # branches: [ "main" ]
+  # Web hook
+  repository_dispatch:
+    types:
+      - webhook
+  
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
+    inputs:
+      name:
+        type: string
+        required: true
+        default: kim
+        description: Who are you?
+        options:
+          - kim
+          - naomi
+          - mao
+          - miki
+      sex:
+        type: string
+        required: true
+        default: None
+        description: What is your sex?
+        options:
+          - Man
+          - Wom an
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
