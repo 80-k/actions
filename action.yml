@@ -1,5 +1,5 @@
 # metadata for this action
-name: 'Intro to actions'
+name: 'Intro-to-actions'
 description: 'Greet new contributors when they create their first issue or open their first pull request'
 author: 'GitHub'
 branding:
