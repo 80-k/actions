@@ -1,9 +1,11 @@
-FROM python3
+FROM python:3-slim
 
-COPY ./requirements.txt .
+WORKDIR /app
+
+COPY requirements.txt ./
 
 RUN pip install -r requirements.txt
 
-COPY . .
+COPY . .  # Copy application code
 
-ENTRYPOINT ["python3", "/lib/main.py"]
+ENTRYPOINT ["python3", "main.py"]
