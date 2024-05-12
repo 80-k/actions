@@ -48,7 +48,7 @@ jobs:
     environment: production
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - uses: 80-k/actions@v0.0.1
+      - uses: 80-k/actions@v0.0.1-beta
         id: my-action
             
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
