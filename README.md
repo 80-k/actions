@@ -1,5 +1,7 @@
 # actions
-actions practices
+! WARNING !
+actions practices. DO NOT USE this actions for your production.
+This actions is created for educational purpose.
 
 ![Workflow badge](https://github.com/80-k/actions/actions/workflows/hello_world.yml/badge.svg?branch=main)
 
