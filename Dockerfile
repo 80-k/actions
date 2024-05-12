@@ -1,4 +1,4 @@
-ROM node:20.10-buster-slim
+FROM node:20.10-buster-slim
 
 COPY . .
 
