@@ -3,6 +3,7 @@
     "version": "1.3.0",
     "description": "An action for greeting first time contributors.",
     "main": "lib/main.js",
+    "type": "module",
     "scripts": {
       "build": "tsc",
       "format": "prettier --write **/*.ts",
