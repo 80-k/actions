@@ -58,5 +58,7 @@ jobs:
         run: |
           echo Add other actions to build,
           echo test, and deploy your project.
-      - name: enviroment property test
-        run: echo $weather
+      - name: enviroment property test1
+        run: echo $WEATHER
+      - name: enviroment property test2
+        run: echo ${{ WEATHER }}
