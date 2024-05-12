@@ -1,11 +1,7 @@
-FROM python:3-slim
-
-WORKDIR /app
-
-COPY requirements.txt ./
-
-RUN pip install -r requirements.txt
+ROM node:20.10-buster-slim
 
 COPY . .
 
-ENTRYPOINT ["python3", "main.py"]
+RUN npm install --production
+
+ENTRYPOINT ["node", "/lib/main.js"]
