@@ -61,4 +61,4 @@ jobs:
       - name: enviroment property test1
         run: echo $WEATHER
       - name: enviroment property test2
-        run: echo '${{ WEATHER }}'
+        run: echo "${{ WEATHER }}"
