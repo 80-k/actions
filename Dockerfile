@@ -1,5 +1,9 @@
-FROM node:20.10-buster-slim
+FROM python3
+
+COPY ./requirements.txt .
+
+RUN pip install -r requirements.txt
 
 COPY . .
 
-ENTRYPOINT ["node", "/lib/main.js"]
+ENTRYPOINT ["python3", "/lib/main.py"]
