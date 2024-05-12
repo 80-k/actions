@@ -1,9 +1,10 @@
 # metadata for this action
 name: 'Intro to actions'
-icon: award
-color: yellow
 description: 'Greet new contributors when they create their first issue or open their first pull request'
 author: 'GitHub'
+branding:
+  icon: 'award'
+  color: 'yellow'
 
 # 입력값
 inputs:
